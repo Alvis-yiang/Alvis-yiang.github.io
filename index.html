@@ -190,23 +190,37 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2021/07/29/Markdown%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" target="_self">
-          Markdown快速入门
+        <a href="/2021/11/15/ssm%E6%95%B4%E5%90%88/" target="_self">
+          ssm整合
         </a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2021/07/29/Markdown%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" target="_self">
+        <a href="/2021/11/15/ssm%E6%95%B4%E5%90%88/" target="_self">
           
           
             
           
-          1.代码块1//语法：```java
+          [toc]
+一、概述
+SSM-CRUD
 
-2.标题一共六级，用#+空格表示，数量即标题的级别
-123456# 一级标题## 二级标题### 三级标题#### 四级标题##### 五级标题###### 六级标题    
+ssm:SpringMVC+Spring+MyBatis
 
-3.字体123456789101112131415//斜体*斜体的内容*//加粗**加粗的内容**//斜体加粗***斜体加粗的内容***//高亮==高亮的内容==//上标我是^上标内
+CRUD：
+
+ Create（创建）
+Retrieve（查询）
+Update（更新）
+Delete（删除
+
+
+
+二、功能点
+分页
+数据校验：jquery前端校验、 JSR303后端校验
+ajax
+Rest风格的URI；使用HTTP协议请求方式的动词，来表示对资源的操作（GET（查询），POST（新
         </a>
       </p>
 
@@ -214,8 +228,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2021-07-29 19:28" pubdate>
-              2021-07-29
+            <time datetime="2021-11-15 19:28" pubdate>
+              2021-11-15
             </time>
           </div>
         
@@ -223,7 +237,7 @@
           <div class="post-meta mr-3">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">博客搭建</a>
+              <a href="/categories/java/">java</a>
             
           </div>
         
@@ -231,7 +245,11 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E4%B8%8A%E6%89%8Bmd%E6%A0%BC%E5%BC%8F/">上手md格式</a>
+              <a href="/tags/java/">java</a>
+            
+              <a href="/tags/ssm/">ssm</a>
+            
+              <a href="/tags/spring/">spring</a>
             
           </div>
         
@@ -245,20 +263,24 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2021/07/29/python%E4%B9%8B%E9%87%8D%E5%90%AF%E7%A8%8B%E5%BA%8F/" target="_self">
-          python之重启程序
+        <a href="/2021/11/12/MyBatis/" target="_self">
+          MyBatis
         </a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2021/07/29/python%E4%B9%8B%E9%87%8D%E5%90%AF%E7%A8%8B%E5%BA%8F/" target="_self">
+        <a href="/2021/11/12/MyBatis/" target="_self">
           
           
             
           
-          123456import configparserimport os# 重启程序python = sys.executableos.execl(python, python, *sys.argv)
+          [toc]
+一.下载MyBatisgithub下载地址
+二.MyBatis操作数据库
+创建MyBatis全局配置文件
 
-
+/conf/mybatis-config.xml
+123456789101112131415161718192021&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;&lt;!DOCTYPE conf
         </a>
       </p>
 
@@ -266,8 +288,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2021-07-29 19:28" pubdate>
-              2021-07-29
+            <time datetime="2021-11-12 19:28" pubdate>
+              2021-11-12
             </time>
           </div>
         
@@ -275,7 +297,7 @@
           <div class="post-meta mr-3">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/python/">python</a>
+              <a href="/categories/java/">java</a>
             
           </div>
         
@@ -283,7 +305,361 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E9%87%8D%E5%90%AF%E7%A8%8B%E5%BA%8F/">重启程序</a>
+              <a href="/tags/MyBatis/">MyBatis</a>
+            
+              <a href="/tags/java/">java</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/11/11/MyBatisPlus/" target="_self">
+          MyBatisPlus
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/11/11/MyBatisPlus/" target="_self">
+          
+          
+            
+          
+          [toc]
+一、MyBatisPlus概况1. 代码及文档地址官方地址
+代码发布地址：github
+代码发布地址：gitee
+文档发布地址
+2.前置知识Mybatis
+ Spring 
+Maven
+二、集成MP1.创建测试表12345678910111213141516-- 创建库CREATE DATABASE mp;-- 使用库USE mp;-- 创建表CREATE TABLE tbl_empl
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-11-11 19:28" pubdate>
+              2021-11-11
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/java/">java</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/java/">java</a>
+            
+              <a href="/tags/mp/">mp</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/11/10/SpringMVC%E7%AC%94%E8%AE%B0/" target="_self">
+          SpringMVC笔记
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/11/10/SpringMVC%E7%AC%94%E8%AE%B0/" target="_self">
+          
+          
+            
+          
+          [TOC]
+一、SpringMVC简介1、什么是MVCMVC是一种软件架构的思想，将软件按照模型、视图、控制器来划分
+M：Model，模型层，指工程中的JavaBean，作用是处理数据
+JavaBean分为两类：
+
+一类称为实体类Bean：专门存储业务数据的，如 Student、User 等
+一类称为业务处理 Bean：指 Service 或 Dao 对象，专门用于处理业务逻辑和数据访问。
+
+V：
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-11-10 19:28" pubdate>
+              2021-11-10
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/java/">java</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/java/">java</a>
+            
+              <a href="/tags/spring/">spring</a>
+            
+              <a href="/tags/springMVC/">springMVC</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/11/05/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3idea%E4%B8%AD%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/" target="_self">
+          如何解决idea中乱码问题
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/11/05/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3idea%E4%B8%AD%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/" target="_self">
+          
+          
+            
+          
+          [toc]
+一、获取请求参数的乱码问题可以使用SpringMVC提供的编码过滤器CharacterEncodingFilter，但是必须在web.xml中进行注册。
+1234567891011121314151617&lt;!--配置springMVC的编码过滤器--&gt;&lt;filter&gt;    &lt;filter-name&gt;CharacterEncodingFilter&l
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-11-05 19:38" pubdate>
+              2021-11-05
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Other/">Other</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/idea/">idea</a>
+            
+              <a href="/tags/%E4%B9%B1%E7%A0%81/">乱码</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/11/01/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%85%A5%E9%97%A8/" target="_self">
+          小程序入门
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/11/01/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%85%A5%E9%97%A8/" target="_self">
+          
+          
+            
+          
+          [toc]
+第一章 小程序入门一、 环境介绍
+开发平台  
+微信开放文档
+
+下载稳定版本开发工具
+二、开发设置
+项目名称：XXX
+
+AppID：在后台获取id或者使用测试id
+
+选择是否使用云服务
+
+语言：JavaScript
+
+详情 &gt; 测试版本库：选择占比最高的
+
+详情 &gt; 不校验合法域名：勾选
+
+
+三、目录结构sitemap.json ：哪些文件可以被微信搜索到
+project.
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-11-01 19:28" pubdate>
+              2021-11-01
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">微信小程序</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/">小程序</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/10/11/%E8%B5%84%E6%BA%90%E9%93%BE%E6%8E%A5%E6%95%B4%E7%90%86/" target="_self">
+          资源链接整理
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/10/11/%E8%B5%84%E6%BA%90%E9%93%BE%E6%8E%A5%E6%95%B4%E7%90%86/" target="_self">
+          
+          
+            
+          
+          [toc]
+资源链接整理软件模块Java学习模块MyBatis[jar包获取](Releases · mybatis/mybatis-3 (github.com))
+电影模块
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-10-11 10:28" pubdate>
+              2021-10-11
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Other/">Other</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%B5%84%E6%BA%90/">资源</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/09/30/%E7%BD%91%E7%AB%99%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4%E8%BD%B4/" target="_self">
+          网站添加时间轴
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/09/30/%E7%BD%91%E7%AB%99%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4%E8%BD%B4/" target="_self">
+          
+          
+            
+          
+          [toc]
+时间轴代码12345678910111213&lt;div id=&quot;timeline&quot;&gt;	&lt;ol&gt;		&lt;li&gt;&lt;b&gt;2021年8月&lt;/b&gt;杭州市级企业研发中心&lt;/li&gt;		&lt;li&gt;&lt;b&gt;2019年11月&lt;/b&gt;国家高新技术企业通过复审&lt;/li&gt;		&lt
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-09-30 19:28" pubdate>
+              2021-09-30
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Wordpress/">Wordpress</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/wordpress/">wordpress</a>
+            
+              <a href="/tags/%E5%8F%91%E5%B1%95%E5%8F%B2/">发展史</a>
             
           </div>
         
@@ -395,177 +771,13 @@ Quick
     </article>
   </div>
 
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/07/29/python%E5%AD%A6%E4%B9%A0%E4%B9%8BTkinter/" target="_self">
-          python学习之Tkinter
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/07/29/python%E5%AD%A6%E4%B9%A0%E4%B9%8BTkinter/" target="_self">
-          
-          
-            
-          
-          三种布局方式在tkinter中有三种布局方法，pack、grid、place
-1. packpack方法为自适应布局方法，即根据控件大小和顺序来自动实现布局，默认让一个控件独立占一行并居中显示，也可以加入参数调整位置。
-基本语法为：
-1ui.pack() #ui为控件名
-
-或者：
-12ui1.pack(side=&#x27;LEFT&#x27;) #设定ui显示在窗体左侧，这时右侧也需要有一个控件
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-07-29 19:28" pubdate>
-              2021-07-29
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/python/">python</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Tkinter/">Tkinter</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/07/29/python%E6%93%8D%E4%BD%9Cini%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/" target="_self">
-          python操作ini配置文件
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/07/29/python%E6%93%8D%E4%BD%9Cini%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/" target="_self">
-          
-          
-            
-          
-          一、.ini文件说明格式如下：
-1234567;comments[section1]Param1 = value1Param2= value2[section2]Param3= value3Param4= value4
 
 
-==;== 注释
-==[section]==代表一个模块，一个文件内可以设置多个模块，自定义模块名称
-==Param1 = value1==参数名称以及参数值，键值对的形式
-
-
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-07-29 19:28" pubdate>
-              2021-07-29
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/python/">python</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/ini%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/">ini配置文件</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/07/29/%E4%B8%96%E7%95%8C%E5%85%AD%E5%A4%A7%E7%BB%8F%E5%85%B8%E9%85%8D%E8%89%B2/" target="_self">
-          世界六大经典配色
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/07/29/%E4%B8%96%E7%95%8C%E5%85%AD%E5%A4%A7%E7%BB%8F%E5%85%B8%E9%85%8D%E8%89%B2/" target="_self">
-          
-          
-            
-          
-          1、敦煌——最神秘的配色12345#ECD98B#AAAAC2#03875C#9A4C434E3227
-
-2、洛可可——最优雅的配色12345#D38490#A9ABAE#C4493A#90B07A#768BA0
-
-3、孟菲斯——最靓丽的配色12345#EFD55E#89D0C2#F77A82#B7AACB#077ABD
-
-4、马卡龙——最甜美的配色12345#B7E0FF#CFEADC#FBED
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-07-29 19:28" pubdate>
-              2021-07-29
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/%E5%89%8D%E7%AB%AF%E8%AE%BE%E8%AE%A1/">前端设计</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E9%85%8D%E8%89%B2/">配色</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/#board">2</a><a class="extend next" rel="next" href="/page/2/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
 
 
 
